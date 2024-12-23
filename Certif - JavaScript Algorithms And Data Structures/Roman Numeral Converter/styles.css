@@ -1,0 +1,149 @@
+:root {
+    --gray-00: #ffffff;
+    --gray-05: #f5f6f7;
+    --gray-15: #d0d0d5;
+    --gray-75: #000000;
+    --gray-85: #000000;
+    --gray-90: #25ac40;
+    --blue-50: #198eee;
+    --error: #f866f1;
+    --danger-color: #ffffff;
+    --danger-background: #000000;
+  }
+  
+  *,
+  ::before,
+  ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    padding: 50px 20px;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    background-color: var(--gray-85);
+    color: var(--gray-05);
+    background-image: url('chiffre2.jpeg'); 
+    background-size: cover; /* L'image couvre toute la page */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    height: 100vh; /* Hauteur de la page entière (100% de la hauteur de la fenêtre) */
+    margin: 0; /* Supprime la marge par défaut */
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  form {
+    color: var(--gray-05);
+    margin: 40px 25px;
+    padding: 15px auto;
+    border: 3px solid var(--gray-05);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    background-color: var(--gray-75);
+    margin-top: 300px;
+  }
+  
+  fieldset {
+    border: 0 none;
+    height: 100%;
+    padding: 25px;
+    margin: 10px 20px;
+  }
+  
+  label {
+    display: inline-block;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    
+  }
+  
+  input:focus-visible,
+  button:focus-visible {
+    outline: 3px solid var(--blue-50);
+  }
+  
+  input {
+    display: block;
+    font-size: 2.5rem;
+    width: 100%;
+    height: 60px;
+    padding: 6px 12px;
+    margin: 10px 0;
+    line-height: 1.4;
+    color: white;
+    background-color: var(--gray-90);
+    border: 1px solid var(--gray-05);
+  }
+  
+  button {
+    cursor: pointer;
+    margin-top: 15px;
+    text-decoration: none;
+    background-image: linear-gradient(#fecc4c, #ffac33);
+    border: 3px solid #feac32;
+    padding: 10px 16px;
+    font-size: 23px;
+    width: 100%;
+  }
+  
+  .output {
+    color: white;
+    background-color: var(--gray-75);
+    border: 3px solid var(--gray-05);
+    font-size: 2.5rem;
+    width: 90%;
+    max-width: 500px;
+    min-height: 55px;
+    margin-top: 25px;
+    padding: 15px;
+    overflow-wrap: break-word;
+    text-align: center;
+  }
+  
+  .alert {
+    font-size: 2rem;
+    background-color: var(--danger-background);
+    border: 3px solid var(--danger-color);
+    color: var(--danger-color);
+  }
+  
+ 
+  @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+html,
+body {
+  font-family: 'Roboto Mono', monospace;
+  
+  height: 100%;
+}
+.container_new {
+  height: 100px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;  
+  position: absolute;
+  margin-top: 100px;
+}
+.text {
+  font-weight: 300;
+  font-size: 80px;
+  color: #ffffff;
+  background-color:#000000;
+  box-shadow: #d0d0d5;
+}
+.dud {
+  color: #696767;
+}
+.dud2 {
+  color: #ffffff;
+}
